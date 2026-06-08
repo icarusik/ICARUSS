@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produto - ICARUS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #111;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+    .btn-back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: #000;
+    color: #fff;
+
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-back:hover {
+    transform: translateX(-3px);
+    background-color: #222;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.btn-back:active {
+    transform: scale(0.95);
+}
+    
+    .container {
+  width: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  gap: 30px;
+
+  align-items: flex-start;
+}
+    .container {
+  width: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  gap: 30px;
+
+  align-items: flex-start;
+}
+    .container {
+  width: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  gap: 30px;
+
+  align-items: flex-start;
+}
+    .container {
+  width: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  gap: 30px;
+
+  align-items: flex-start;
+}
+    .container {
+  width: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  gap: 30px;
+
+  align-items: flex-start;
+}
+    .container {
+  width: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  gap: 30px;
+
+  align-items: flex-start;
+}
+    .container {
+  width: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  gap: 30px;
+
+  align-items: flex-start;
+}
+    .container {
+  width: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  gap: 30px;
+
+  align-items: flex-start;
+}
+    .container {
+  width: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  gap: 30px;
+
+  align-items: flex-start;
+}
+    .container {
+  width: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  gap: 30px;
+
+  align-items: flex-start;
+}
+
+    .image-box {
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .image-box img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .content {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .brand {
+      font-size: 14px;
+      color: #999;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      color: #bbb;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .sizes {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .size-btn {
+      padding: 12px 20px;
+      border: 1px solid #444;
+      background: transparent;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .size-btn:hover {
+      background: white;
+      color: black;
+    }
+
+    .size-btn.active {
+      background: white;
+      color: black;
+    }
+
+    .cart-btn {
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      background: white;
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cart-btn:hover {
+      transform: scale(1.02);
+    }
+
+    .cart {
+      margin-top: 30px;
+      padding: 20px;
+      background: #0d0d0d;
+      border-radius: 15px;
+    }
+
+    .cart h2 {
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    .cart-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+      color: #ddd;
+    }
+
+    .empty {
+      color: #777;
+    }
+
+.checkout-btn {
+  margin-top: 15px;
+  padding: 16px;
+  border: 2px solid white;
+  border-radius: 12px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+
+  box-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff;
+}
+
+.checkout-btn:hover {
+  background: white;
+  color: black;
+
+  box-shadow:
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff;
+
+  transform: scale(1.02);
+}
+
+@media (max-width: 850px) {
+
+  .container{
+    flex-direction: column;
+  }
+
+  .image-box{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .image-box img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .content{
+    padding: 20px;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+  .container{
+  flex-direction: column;
+}
+
+}
+  </style>
+  
+</head>
+<body>
+
+
+<div class="btn-back"><button onclick="history.back()" class="btn-back">
+    ← Voltar
+</button>
+</div>
+
+    <div class="container">
+    
+    <div class="image-box">
+     <img id="product-image" src="blusa preta.jpeg" alt="Calça Eagle">
+    </div>
+
+    <div class="content">
+      <p class="brand">ICARUS</p>
+      <h1>Blusa Eagle</h1>
+      <p class="price">R$ 200,00</p>
+
+      <p class="description">
+        Modelagem boxy, tecido de moletom, cintura com elástico, bolso e touca além de conforto e estilo!
+      </p>
+      <h3 style="margin-bottom:15px;">Escolha a cor:</h3>
+
+<div class="colors" style="
+display:flex;
+gap:12px;
+margin-bottom:25px;
+">
+
+<div class="color-btn active"
+style="
+width:35px;
+height:35px;
+border-radius:50%;
+background:black;
+border:3px solid white;
+cursor:pointer;
+"
+data-color="Preta"
+data-image="blusa preta.jpeg">
+</div>
+
+<div class="color-btn"
+style="
+width:35px;
+height:35px;
+border-radius:50%;
+background:gray;
+border:3px solid transparent;
+cursor:pointer;
+"
+data-color="Cinza"
+data-image="blusa cinza.jpeg">
+</div>
+
+</div>
+
+<h3 style="margin-bottom:15px;">Quantidade:</h3>
+
+<div style="
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:25px;
+">
+
+<button id="minusQty" class="size-btn">-</button>
+
+<span id="quantityDisplay">1</span>
+
+<button id="plusQty" class="size-btn">+</button>
+
+</div>
+
+      <h3 style="margin-bottom: 15px;">Escolha o tamanho:</h3>
+
+
+      <div class="sizes">
+        <button class="size-btn">P</button>
+        <button class="size-btn">M</button>
+        <button class="size-btn">G</button>
+      </div>
+
+      <button class="cart-btn" onclick="addToCart()">
+        Adicionar ao Carrinho
+      </button>
+
+<button class="checkout-btn" onclick="checkout()">
+  Finalizar Compra
+</button>
+
+
+      <div class="cart">
+        <h2>Carrinho</h2>
+        <div id="cart-items">
+          <p class="empty">Seu carrinho está vazio.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="carrinho.js"></script>
+  <script>
+    const sizeButtons = document.querySelectorAll('.size-btn');
+    const cartItems = document.getElementById('cart-items');
+    const colorButtons = document.querySelectorAll('.color-btn');
+const productImage = document.getElementById('product-image');
+
+let selectedColor = "Preta";
+let quantity = 1;
+
+setTimeout(() => {
+
+const minusBtn = document.getElementById('minusQty');
+const plusBtn = document.getElementById('plusQty');
+const quantityDisplay = document.getElementById('quantityDisplay');
+
+plusBtn.addEventListener('click', () => {
+  quantity++;
+  quantityDisplay.innerText = quantity;
+});
+
+minusBtn.addEventListener('click', () => {
+  if(quantity > 1){
+    quantity--;
+    quantityDisplay.innerText = quantity;
+  }
+});
+
+},100);
+
+colorButtons.forEach(button => {
+
+button.addEventListener('click', () => {
+
+document.querySelectorAll('.color-btn').forEach(btn => {
+  btn.style.border = "3px solid transparent";
+});
+
+button.style.border = "3px solid white";
+
+selectedColor = button.dataset.color;
+
+productImage.src = button.dataset.image;
+
+});
+
+});
+
+    let selectedSize = null;
+    let cart = [];
+
+    sizeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        sizeButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        selectedSize = button.innerText;
+      });
+    });
+
+    function addToCart() {
+      if (!selectedSize) {
+        alert('Selecione um tamanho!');
+        return;
+      }
+
+     const product = {
+  name: 'Blusa Eagle',
+  color: selectedColor,
+  quantity: quantity,
+  size: selectedSize,
+  price: 'R$ 200,00',
+  image: productImage.src
+}; 
+      cart.push(product);
+      renderCart();
+    }
+
+    function renderCart() {
+      cartItems.innerHTML = '';
+
+      cart.forEach((item, index) => {
+        const div = document.createElement('div');
+        div.classList.add('cart-item');
+
+        div.innerHTML = `
+
+
+
+  </div>
+`;
+        div.innerHTML = `
+  <div style="
+    display:flex;
+    gap:15px;
+    align-items:center;
+  ">
+
+    <img 
+      src="${item.image}" 
+      style="
+        width:70px;
+        height:70px;
+        object-fit:cover;
+        border-radius:10px;
+        border:1px solid #333;
+      "
+    >
+
+    <div>
+      <strong>${item.name}</strong><br>
+      Tamanho: ${item.size}<br>
+      ${item.price}
+    </div>
+
+  </div>
+`;
+        div.innerHTML = `
+  <div style="
+    display:flex;
+    gap:15px;
+    align-items:center;
+  ">
+
+    <img 
+      src="${item.image}" 
+      style="
+        width:70px;
+        height:70px;
+        object-fit:cover;
+        border-radius:10px;
+        border:1px solid #333;
+      "
+    >
+
+    <div>
+      <strong>${item.name}</strong><br>
+      Tamanho: ${item.size}<br>
+      ${item.price}
+    </div>
+
+  </div>
+`;
+        div.innerHTML = `
+  <div style="
+    display:flex;
+    gap:15px;
+    align-items:center;
+  ">
+
+    <img 
+      src="${item.image}" 
+      style="
+        width:70px;
+        height:70px;
+        object-fit:cover;
+        border-radius:10px;
+        border:1px solid #333;
+      "
+    >
+
+    <div>
+      <strong>${item.name}</strong><br>
+      Tamanho: ${item.size}<br>
+      ${item.price}
+    </div>
+
+  </div>
+`;
+        div.innerHTML = `
+  <div style="
+    display:flex;
+    gap:15px;
+    align-items:center;
+  ">
+
+    <img 
+      src="${item.image}" 
+      style="
+        width:70px;
+        height:70px;
+        object-fit:cover;
+        border-radius:10px;
+        border:1px solid #333;
+      "
+    >
+
+    <div>
+      <strong>${item.name}</strong><br>
+      Tamanho: ${item.size}<br>
+      ${item.price}
+    </div>
+
+  </div>
+`;
+
+        cartItems.appendChild(div);
+      });
+    }
+ 
+    function checkout(){
+
+if(cart.length === 0){
+  alert("Seu carrinho está vazio!");
+  return;
+}
+
+let resumo = "Pedido:%0A%0A";
+
+cart.forEach(item => {
+
+resumo +=
+`${item.name} | Cor: ${item.color} | Tamanho: ${item.size} | Quantidade: ${item.quantity}%0A`;
+
+});
+
+window.open(
+`https://wa.me/43999046154?text=${resumo}`,
+
+);
+
+}
+ 
+ </script>
+
+</body>
+</html>

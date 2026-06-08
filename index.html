@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iCaRuS</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="favicon.ico.png">
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:#111;
+  color:#fff;
+}
+
+.hero{
+  min-height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('./foto.jpg') center center/cover no-repeat;
+}
+
+
+.navbar{
+  position:relative;
+  z-index:2;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:30px 60px;
+}
+
+/* LOGO COM IMAGEM */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  font-size:28px;
+  letter-spacing:6px;
+  font-weight:bold;
+}
+
+/* IMAGEM DA LOGO */
+.logo img{
+  width:140px;
+  height:140px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+.menu{
+  display:flex;
+  list-style:none;
+  gap:40px;
+}
+
+.menu a{
+  color:#fff;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.menu a:hover{
+  opacity:0.7;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  height:80%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero-content h1{
+  font-size:64px;
+  max-width:900px;
+  margin-bottom:20px;
+  font-weight:300;
+}
+
+.hero-content p{
+  font-size:20px;
+  opacity:0.8;
+  margin-bottom:40px;
+}
+
+.btn{
+  padding:14px 34px;
+  border:1px solid #010101;
+  color:#000000;
+  text-decoration:none;
+  transition:0.3s;
+
+  scroll-behavior:smooth;
+
+}
+
+.btn:hover{
+  background:#040404;
+  color:#fefefe;
+}
+
+.gallery{
+  padding:100px 60px;
+}
+
+.section-title{
+  margin-bottom:50px;
+}
+
+.section-title h2{
+  font-size:42px;
+  font-weight:300;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+  gap:30px;
+}
+
+.card{
+  position:relative;
+  overflow:hidden;
+  height:500px;
+  cursor:pointer;
+}
+
+.card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:0.6s;
+}
+
+.card:hover img{
+  transform:scale(1.08);
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  display:flex;
+  align-items:flex-end;
+  padding:30px;
+}
+
+.overlay h3{
+  font-size:28px;
+  font-weight:300;
+}
+
+.about{
+  padding:120px 60px;
+  background:#181818;
+}
+
+.about .content{
+  max-width:800px;
+}
+
+.about h2{
+  font-size:42px;
+  margin-bottom:20px;
+  font-weight:300;
+}
+
+.about p{
+  line-height:1.8;
+  opacity:0.8;
+}
+
+footer{
+  padding:40px;
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,0.1);
+  opacity:0.6;
+}
+
+@media(max-width:768px){
+
+  .card{
+    height:auto;
+  }
+
+  .card img{
+    height:auto;
+    display:block;
+  }
+
+}
+
+  .navbar{
+    padding:20px;
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .menu{
+    gap:20px;
+  }
+
+  .hero-content h1{
+    font-size:40px;
+  }
+
+  .gallery,
+  .about{
+    padding:60px 20px;
+  }
+.cart-float {
+  font-size:250px; /* aumenta o ícone */
+}
+}
+
+</style>
+</head>
+
+<body>
+
+  <header class="hero">
+
+    <nav class="navbar">
+
+      <!-- LOGO COM IMAGEM -->
+      <div class="logo">
+        <img src="LOGO.jpeg" alt="Logo iCaRuS">
+        <span></span>
+      </div>
+
+      <ul class="menu">
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+     
+    
+
+    </nav>
+
+    <div class="hero-content">
+      <h1> Fly High with Icarus</h1>
+      <p></p>
+
+      
+        <button class="btn" onclick="scrollParaBaixo()">Explorar</button>
+    </div>
+
+  </header>
+
+  <section class="gallery">
+
+    <div class="section-title">
+      <h2>More...</h2>
+    </div>
+
+   
+
+      <div class="grid">
+
+  <div class="card">
+    <a href="blusa.html">
+      <img src="blusa preta.jpeg" alt="Blusa Eagle">
+      <div class="overlay">
+        <h3></h3>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="calças.html">
+      <img src="calça preta.jpeg" alt="Calça Eagle">
+      <div class="overlay">
+        <h3></h3>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="camisas.html">
+      <img src="camisa interrogaçao.png" alt="Camisas">
+      <div class="overlay">
+        <h3></h3>
+      </div>
+    </a>
+  </div>
+
+    </div>
+
+  </section>
+
+  <section class="about">
+
+    <div class="content">
+      <h2>Sobre a iCaRuS</h2>
+
+      <p>
+        Criamos a marca para que seja confortável e estilosa para todos.
+        <br> insta>
+
+        <a href="https://www.instagram.com/icarus.ik/" target="_blank">
+          Instagram
+        </a>
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 ICARUS </p>
+  </footer>
+<script>
+     src="carrinho.js"
+
+function scrollParaBaixo() {
+  window.scrollBy({
+    top: window.innerHeight,
+    behavior: "smooth"
+        
+
+  });
+    
+ 
+}
+</script>
+</body>
+</html>
